@@ -6,6 +6,7 @@
 ### 技术
     react-native 0.59.8
     react 16.8.3
+    react-navigation 3.11.0
 
 ## 项目结构
 

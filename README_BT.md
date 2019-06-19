@@ -11,3 +11,8 @@
     2.Presenter base
         basePresenter
         appPresenter
+
+### b0.1.*
+    react-navigation部分
+
+    b0.1.1 react-navigation 添加

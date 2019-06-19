@@ -7,6 +7,12 @@
     react-native 0.59.8
     react 16.8.3
     react-navigation 3.11.0
+    react-native-gesture-handler 1.3.0
+
+### 依赖配置
+#### react-navigation
+    参考 [react-navigation 入门 安装react-navigation](https://reactnavigation.org/docs/zh-Hans/getting-started.html) 
+
 
 ## 项目结构
 
@@ -15,3 +21,4 @@
 
 ## 参考
     react-native [中文网](reactnative.cn)
+    react-navigation (reactnavigation.org)

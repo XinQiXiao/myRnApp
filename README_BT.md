@@ -12,7 +12,17 @@
         basePresenter
         appPresenter
 
-### b0.1.*
+## b0.1.*
     react-navigation部分
 
-    b0.1.1 react-navigation 添加
+### b0.1.1 react-navigation 添加
+
+### b0.1.2
+        1.项目/app/container 配置
+        2.navigation lifecycle
+        3.传递参数给路由
+        4.配置标题栏
+        5.标题栏按钮
+
+### b0.1.3 
+        TODO 1.App containers

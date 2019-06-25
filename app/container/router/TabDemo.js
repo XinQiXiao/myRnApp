@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet, Button, } from 'react-native'
-import { createBottomTabNavigator, createAppContainer } from 'react-navigation'
+import { createBottomTabNavigator } from 'react-navigation'
 
 // style
 import { styleColors } from '../../style'

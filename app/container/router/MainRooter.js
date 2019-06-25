@@ -7,6 +7,7 @@ import { createStackNavigator, createAppContainer, } from 'react-navigation'
 
 // components
 // import TabNavigator from './TabDemo'
-import DrawerNavigator from './drawerDemo'
+// import DrawerNavigator from './drawerDemo'
+import AuthNavigator from './authCheckDemo'
 
-export default createAppContainer(DrawerNavigator)
+export default createAppContainer(AuthNavigator)

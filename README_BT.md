@@ -34,3 +34,10 @@
         样式 文件创立
 
     b0.1.5 drawer navigation
+    b0.1.6 身份验证流程
+        添加 router/authCheckDemo
+        添加 auth/
+        
+        warn bug: "Warning: Async Storage has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-community/async-storage' instead of 'react-native'."
+        导入 @react-native-community/async-storage
+        参考：https://www.npmjs.com/package/@react-native-community/async-storage

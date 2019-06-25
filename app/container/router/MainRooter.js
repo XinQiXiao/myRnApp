@@ -5,6 +5,9 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, Button,} from 'react-native'
 import { createStackNavigator, createAppContainer, createDrawerNavigator, createSwitchNavigator, } from 'react-navigation'
 
+// components
+import TabNavigator from './TabDemo'
+
 class FeedScreen extends Component{
   render(){
     return (
@@ -13,55 +16,13 @@ class FeedScreen extends Component{
           this.props.navigation.navigate('Auth')
         }}/>
         <Text>Feed Screen.</Text>
+        <AnimateComponent style={{width: 250, height: 50, backgroundColor: 'powderblue'}}>
+          <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>Fading in</Text>
+        </AnimateComponent >
       </View>
     )
   }
 }
-
-class FriendListScreen extends Component{
-  render(){
-    return (
-      <View style={styles.container}>
-        <Text>FriendList Screen.</Text>
-      </View>
-    )
-  }
-}
-
-class SignInScreen extends Component{
-  render(){
-    return (
-      <View style={styles.container}>
-        <Text>SignIn Screen.</Text>
-      </View>
-    )
-  }
-}
-
-class ForgotPasswordScreen extends Component{
-  render(){
-    return (
-      <View style={styles.container}>
-        <Text>Forgot password Screen.</Text>
-      </View>
-    )
-  }
-}
-
-const FriendsNavigator = createDrawerNavigator({
-  Feed: FeedScreen,
-  FriendList: FriendListScreen,
-})
-
-const AuthNavigator = createStackNavigator({
-  SignIn: SignInScreen,
-  ForgotPassword: ForgotPasswordScreen,
-})
-
-const AppNavigator = createSwitchNavigator({
-  App: FriendsNavigator,
-  Auth: AuthNavigator,
-})
 
 const styles = StyleSheet.create({
   container: {
@@ -71,4 +32,6 @@ const styles = StyleSheet.create({
   }
 })
 
-export default createAppContainer(AppNavigator)
+
+
+export default createAppContainer(TabNavigator)

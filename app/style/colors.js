@@ -2,8 +2,11 @@
  * create at 06/25/19
  */
 
-const BLUE_COLOR = '#73b1fa'
+// gray
 const GRAY_COLOR = '#666'
+
+// blue
+const BLUE_COLOR = '#73b1fa'
 
 export {
   BLUE_COLOR,

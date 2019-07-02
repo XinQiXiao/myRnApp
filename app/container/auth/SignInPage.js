@@ -13,7 +13,7 @@ class SignInScreen extends Component {
   _signInAsync = async ()=>{
     try{
       await AsyncStorage.setItem('userToken', 'abc')
-      this.props.navigation.navigate('appStack')
+      this.props.navigation.navigate('appMainStack')
     }catch(e){
       console.log('_signInAsync e=>', e)
     }

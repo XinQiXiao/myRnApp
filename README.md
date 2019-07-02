@@ -9,6 +9,7 @@
     react-navigation 3.11.0
     react-native-gesture-handler 1.3.0
     @react-native-community/async-storage v1.5.0
+    react-native-device-info 2.1.3
 
 ### 依赖配置
 #### react-navigation

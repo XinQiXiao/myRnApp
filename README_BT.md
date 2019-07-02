@@ -44,3 +44,5 @@
 
     b0.1.7 safe view
         1.iOS 适配及icon
+        2. 添加 style distances
+        3. 引入 react-native-device-info

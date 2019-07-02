@@ -9,6 +9,6 @@ import { createStackNavigator, createAppContainer, } from 'react-navigation'
 // import TabNavigator from './TabDemo'
 // import DrawerNavigator from './drawerDemo'
 // import AuthNavigator from './authCheckDemo'
-import AuthCheckRooter from './authCheckDemo'
+import AuthCheckRooter from './AuthCheckRouter'
 
 export default createAppContainer(AuthCheckRooter)

@@ -41,3 +41,6 @@
         warn bug: "Warning: Async Storage has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-community/async-storage' instead of 'react-native'."
         导入 @react-native-community/async-storage
         参考：https://www.npmjs.com/package/@react-native-community/async-storage
+
+    b0.1.7 safe view
+        1.iOS 适配及icon

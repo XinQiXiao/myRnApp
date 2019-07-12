@@ -25,7 +25,7 @@
         5.标题栏按钮
 
     b0.1.3 
-        TODO 1.App containers
+        1.App containers
         2.打开全屏模式
 
     b0.1.4 
@@ -49,4 +49,10 @@
         4. 配置项目导航栏 和 tabBar选项卡
     
     b0.1.8 redux
-        搭建项目 redux 配置
+        1.搭建项目 redux 配置
+            redux 目录中 添加 reducer/create/actionsTypes/
+
+        2.页面主路由页面界面从TabBarRouter 文件分离
+
+        3. 基础组件 base/BaseSafeView 创建
+            

@@ -1,16 +1,16 @@
 /**
  * create at 06/25/19
  */
-import React, { Component } from 'react'
-import { Text, View, Button, Image, StyleSheet, } from 'react-native'
+import React from 'react'
 import { 
   createBottomTabNavigator, createStackNavigator,
 } from 'react-navigation'
-import AsyncStorage from '@react-native-community/async-storage'
-import DeviceInfo from 'react-native-device-info'
 
 // components 
 import { TabBarComponents, } from '../../components/system'
+// page
+import HomeScreen from '../home/HomeScreen'
+import MineScreen from '../mine/MineScreen'
 
 // style
 import { styleColors, styleNavs, } from '../../style'
@@ -23,51 +23,6 @@ const SETTING_SEL = require('../../sources/images/assets/mine_sel.png')
 
 const { TabBarIcon, } = TabBarComponents
 
-class HomeScreen extends Component {
-  static navigationOptions = {
-    title: '首页',
-  }
-
-  _showMoreApp = () => {
-    this.props.navigation.navigate('other')
-  }
-
-  _signOutAsync = async () => {
-    try{
-      await AsyncStorage.clear()
-      this.props.navigation.navigate('authStack')
-    }catch(e){
-      console.log('_signOutAsync e=>', e)
-    }
-  }
-
-  render() {
-    console.log('current app name=>', DeviceInfo.getApplicationName())
-    return (
-      <View style={styles.container}>
-        <Text>Home screen.</Text>
-        <Button title="Show me more of app" onPress={this._showMoreApp}/>
-        <Button title="Actually, sign me out." onPress={this._signOutAsync}/>
-      </View>
-    )
-  }
-}
-
-
-class SettingsScreen extends Component {
-  static navigationOptions = {
-    title: '设置',
-  }
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Settings screen.</Text> 
-      </View>
-    )
-  }
-}
-
 const HomeStack = createStackNavigator({
   home: HomeScreen,
 }, {
@@ -75,8 +30,8 @@ const HomeStack = createStackNavigator({
     ...styleNavs.navDefaultOptions,
   }
 })
-const SettingStack = createStackNavigator({
-  settings: SettingsScreen,
+const MineStack = createStackNavigator({
+  mine: MineScreen,
 }, {
   defaultNavigationOptions: {
     ...styleNavs.navDefaultOptions,
@@ -103,9 +58,9 @@ const TabStack = createBottomTabNavigator({
     })
   },
   settingTab: {
-    screen: SettingStack,
+    screen: MineStack,
     navigationOptions: ({navigation})=>({
-      tabBarLabel: '设置',
+      tabBarLabel: '我的',
 			labelStyle: {
 				fontSize: 10,
       },
@@ -130,14 +85,6 @@ const TabStack = createBottomTabNavigator({
 			backgroundColor: '#f5f5f7'
 		}
 	}
-})
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  }
 })
 
 export default TabStack

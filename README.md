@@ -3,6 +3,13 @@
 ## 介绍
     基于react-native 的app
 
+### 运行
+    git clone 项目
+    执行 yarn install / npm install
+    执行 react-native link react-native-device-info
+    执行 react-native start
+    在xcode 打开应用 编译/运行 （android 同理）
+
 ### 技术
     react-native 0.59.8
     react 16.8.3
@@ -13,6 +20,8 @@
     redux 4.0.1
     react-redux 7.0.1
     lodash 4.17.4
+    redux-logger 3.0.6
+    prop-types 15.7.2
 
 ### 依赖配置
 #### react-navigation

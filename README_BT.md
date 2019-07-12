@@ -55,3 +55,16 @@
         3. 基础组件 base/BaseSafeView 创建
         4. app 跟目录重构
         5. test reducer 完成
+        6. 添加 redux-logger
+
+    b0.1.9 redux 02
+        1.自定义中间键
+        2. 高阶组件 监听 android 返回键 enhancedBackHandler
+            TODO  需要调研 
+                当前版本RN Modal 组件不需要 enhancedBackHandler 就能处理返回键
+        3. 根据 react-native Modal 自定的浮层组件
+            a. LoadingIndicator
+
+        4. 解决 Android http 请求失败问题 
+            参考： https://blog.csdn.net/qq_40347548/article/details/86766932
+            TODO  失败

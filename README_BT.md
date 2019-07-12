@@ -51,8 +51,7 @@
     b0.1.8 redux
         1.搭建项目 redux 配置
             redux 目录中 添加 reducer/create/actionsTypes/
-
         2.页面主路由页面界面从TabBarRouter 文件分离
-
         3. 基础组件 base/BaseSafeView 创建
-            
+        4. app 跟目录重构
+        5. test reducer 完成

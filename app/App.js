@@ -8,10 +8,10 @@
 
 import React, {Component} from 'react'
 
-import MainRooter from './app/container/router/MainRooter'
+import ClientApp from './Client'
 
 export default class App extends Component{
   render(){
-    return <MainRooter />
+    return <ClientApp />
   }
 }

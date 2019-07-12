@@ -47,3 +47,6 @@
         2. 添加 style distances
         3. 引入 react-native-device-info
         4. 配置项目导航栏 和 tabBar选项卡
+    
+    b0.1.8 redux
+        搭建项目 redux 配置

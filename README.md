@@ -10,6 +10,9 @@
     react-native-gesture-handler 1.3.0
     @react-native-community/async-storage v1.5.0
     react-native-device-info 2.1.3
+    redux 4.0.1
+    react-redux 7.0.1
+    lodash 4.17.4
 
 ### 依赖配置
 #### react-navigation
